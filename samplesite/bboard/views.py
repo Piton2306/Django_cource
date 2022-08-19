@@ -1,3 +1,8 @@
-from django.shortcuts import render
+# Контроллер Django — это код, запускаемый при обращении по интернет-адресу
+# определенного формата и в ответ выводящий на экран определенную веб-страницу.(viev - устаревшее)
 
-# Create your views here.
+from django.http import HttpResponse
+
+
+def index(request):
+    return HttpResponse("Здесь будет выведен список объявлений.")
